@@ -174,11 +174,11 @@ router.get('/hitInfo', async function (req, res) {
 
 
 
-// 0524 수업 내용
+
 router.use(function (req, res, next) {
     res.status(404).send('not found');
 });
-// 0524 수업 내용
+
 router.use(function (err, req, res, next) {
     console.log(err);
     console.log(err.stack);
